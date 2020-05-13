@@ -79,9 +79,11 @@ module.exports = {
           return res.status(200).json({
               'message': "Login realizado com sucesso",
               'user': {
+                  'id': _user.id,
                   'email': _user.email,
                   'name': _user.name,
                   'cash': _user.cash,
+                  'profile': _user.profile,
                   
               }
 

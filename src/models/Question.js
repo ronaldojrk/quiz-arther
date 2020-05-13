@@ -4,11 +4,11 @@ const {Model, DataTypes} = require('sequelize');
 class Question extends Model{
   static init(sequelize){
     super.init({
-      enunciated: DataTypes.STRING(1234),
-      alternativetrue: DataTypes.STRING(1234),
-      alternativea: DataTypes.STRING(1234),
-      alternativeb: DataTypes.STRING(1234),
-      alternativec: DataTypes.STRING(1234),
+      enunciated: DataTypes.STRING,
+      alternativetrue: DataTypes.STRING,
+      alternativea: DataTypes.STRING,
+      alternativeb: DataTypes.STRING,
+      alternativec: DataTypes.STRING,
       timelimite: DataTypes.INTEGER,
     },{
       sequelize

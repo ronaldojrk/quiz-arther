@@ -21,7 +21,7 @@ const User= require('../models/User');
             const nteste = await Task.findOne({ where: {title: title} });
             if(nteste){
 
-              return res.status(204).json({message:'ja existe  um title'});
+              return res.status(400).json({message:'ja existe  um title'});
             }
             const nResults = await Task.count({ where: { title } });
 

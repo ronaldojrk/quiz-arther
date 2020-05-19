@@ -10,7 +10,7 @@ const Record = require('../models/Record')
       try {
               const {user_id} = req.params;
               const {task_id} = req.params;
-            const {pontos,acerto,timetotal,mytime}=req.body;
+            const {pontos,acerto,totalquest}=req.body;
 
             const user = await User.findByPk(user_id);
 
@@ -30,8 +30,7 @@ const Record = require('../models/Record')
             const record = await Record.create({
               pontos,
               acerto,
-              timetotal,
-              mytime,
+              totalquest,
               user_id,
               task_id,
             });

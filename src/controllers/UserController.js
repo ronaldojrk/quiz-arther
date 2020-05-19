@@ -20,7 +20,7 @@ module.exports = {
   // create 
     async store(req,res) {
       try {
-        const{name,email,password,profile} = req.body;
+        const{name,email,password} = req.body;
         const cash =0;
 
           if (!name || !email || !password) {
@@ -38,7 +38,7 @@ module.exports = {
           }
 
 
-        const user = await User.create({ name, email, password,cash,profile});
+        const user = await User.create({ name, email, password,cash});
 
 
 
@@ -83,7 +83,7 @@ module.exports = {
                   'email': _user.email,
                   'name': _user.name,
                   'cash': _user.cash,
-                  'profile': _user.profile,
+                  
                   
               }
 

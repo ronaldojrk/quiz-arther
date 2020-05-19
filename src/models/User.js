@@ -8,7 +8,6 @@ class User extends Model{
       email: DataTypes.STRING,
       password: DataTypes.STRING,
       cash: DataTypes.INTEGER,
-      profile: DataTypes.INTEGER,
     },{
       sequelize
     })

@@ -6,8 +6,8 @@ class Record extends Model{
     super.init({
       pontos: DataTypes.DOUBLE,
       acerto: DataTypes.INTEGER,
-      timetotal: DataTypes.INTEGER,
-      mytime: DataTypes.INTEGER,
+      totalquest: DataTypes.INTEGER,
+      
       
     },{
       sequelize

@@ -55,7 +55,7 @@ routes.get('/users/:user_id/taskslistnotuser',TaskController.indextask);
 routes.get('/quiz',TaskController.tasksquiz);
 
 // quiz para responder pagina inicial
-routes.get('/recordistask/:user_id/task_id',TaskController.recordusertask);
+routes.get('/recordistask/:user_id/:task_id',TaskController.recordusertask);
  // quiz 2 passa o id da task para pega as questions
 routes.post('/quizpagina2/:task_id',TaskController.tasksquizpagina2);
 // criar uma task

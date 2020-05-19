@@ -16,6 +16,18 @@ const User= require('../models/User');
               return res.status(400).json({message:'User not found'});
 
             }
+
+                
+            const nteste = await Task.findOne({ where: {title: title} });
+            if(nteste){
+
+              return res.status(204).json({message:'ja existe  um title'});
+            }
+            const nResults = await Task.count({ where: { title } });
+
+          if (nResults != 0) {
+            return  res.status(400).json({'message':` ${title} já está sendo utilizado.`});
+          }
             const task = await Task.create({
               title,
               description,

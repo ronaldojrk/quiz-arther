@@ -29,7 +29,7 @@ routes.get('/rankcash',UserController.rankcash);
 // da update no usuario
 routes.put('/user/:id',UserController.update);
 //cash
-routes.put('/addcash/:id',UserController.addcash);
+routes.post('/addcash/:id',UserController.addcash);
 routes.put('/removecash/:id',UserController.removecash);
 // remove o usuario
 routes.delete('/user/:id',UserController.delete);

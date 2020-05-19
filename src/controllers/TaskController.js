@@ -149,7 +149,7 @@ const Record= require('../models/Record');
             const {user_id} = req.params;
             const {task_id} = req.params;
 
-          const record = await Record.findAll({  
+          const record = await Record.count({  
             where: {
               user_id:user_id,
               task_id:task_id,
@@ -157,7 +157,7 @@ const Record= require('../models/Record');
 
           });
 
-          if(!record){
+          if(record!=0){
             return res.status(200).json({message:'pode fazer aatividade'});
 
           }else{

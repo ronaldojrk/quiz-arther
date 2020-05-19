@@ -20,16 +20,12 @@ module.exports = {
         allowNull: false,
 
       },
-      timetotal: {
+      totalquest: {
         type: Sequelize.INTEGER ,
         allowNull: false,
 
       },
-      mytime: {
-        type: Sequelize.INTEGER ,
-        allowNull: false,
-
-      },
+      
       user_id: {
         type: Sequelize.INTEGER ,
         allowNull: false,

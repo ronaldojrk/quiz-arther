@@ -31,11 +31,7 @@ module.exports = {
           allowNull: false,
 
         },
-        profile: {
-          type: Sequelize.INTEGER ,
-          allowNull: false,
-
-        },
+        
         created_at: {
           field: 'created_at',
           type: Sequelize.DATE,

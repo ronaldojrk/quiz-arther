@@ -4,35 +4,35 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('questions', { 
       id:{
-        type: Sequelize.INTEGER ,
+        type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false,
 
       },
       enunciated: {
-        type: Sequelize.STRING(1234) ,
+        type: Sequelize.STRING,
         allowNull: false,
 
       },
       
       alternativetrue: {
-        type: Sequelize.STRING(1234) ,
+        type: Sequelize.STRING,
         allowNull: false,
 
       },
       alternativea: {
-        type: Sequelize.STRING(1234) ,
+        type: Sequelize.STRING,
         allowNull: false,
 
       },
       alternativeb: {
-        type: Sequelize.STRING(1234) ,
+        type: Sequelize.STRING,
         allowNull: false,
 
       },
       alternativec: {
-        type: Sequelize.STRING(1234) ,
+        type: Sequelize.STRING ,
         allowNull: false,
 
       },

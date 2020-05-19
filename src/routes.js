@@ -53,6 +53,9 @@ routes.get('/users/:user_id/taskslistnotuser',TaskController.indextask);
 
 // quiz para responder pagina inicial
 routes.get('/quiz',TaskController.tasksquiz);
+
+// quiz para responder pagina inicial
+routes.get('/recordistask/:user_id/task_id',TaskController.recordusertask);
  // quiz 2 passa o id da task para pega as questions
 routes.post('/quizpagina2/:task_id',TaskController.tasksquizpagina2);
 // criar uma task
@@ -83,6 +86,8 @@ routes.get('/record/:user_id',RecordController.index);
 //record do usuario  sem info dele
 
 routes.get('/recorduser/:user_id',RecordController.recorduser);
+
+
 
 
 // pega o rank das atividades feitas

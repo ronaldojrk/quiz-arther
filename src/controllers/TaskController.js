@@ -1,6 +1,7 @@
 
 const Task = require('../models/Task');
 const User= require('../models/User');
+const Record= require('../models/Record');
 
   module.exports = {
     //cadastrar uma task
@@ -140,6 +141,41 @@ const User= require('../models/User');
         console.log(error);
         
       }
+
+    },
+    async recordusertask(req, res){
+    
+      try {
+            const {user_id} = req.params;
+            const {task_id} = req.params;
+
+          const record = await Record.findAll({  
+            where: {
+              user_id:user_id,
+              task_id:task_id,
+            }
+
+          });
+
+          if(!record){
+            return res.status(200).json({message:'pode fazer aatividade'});
+
+          }else{
+            return res.status(200).json({message:'não pode fazer'});
+          }
+
+          //return res.json(record);
+        
+      } catch (error) {
+
+        console.log("deu erro");
+        console.log(error);
+        
+      }
+
+
+
+
 
     },
 

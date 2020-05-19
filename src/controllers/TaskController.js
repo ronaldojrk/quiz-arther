@@ -158,10 +158,10 @@ const Record= require('../models/Record');
           });
 
           if(record!=0){
-            return res.status(200).json({message:'pode fazer aatividade'});
+            return res.status(200).json({message:'nao pode fazer'});
 
           }else{
-            return res.status(200).json({message:'não pode fazer'});
+            return res.status(200).json({message:'pode fazer'});
           }
 
           //return res.json(record);

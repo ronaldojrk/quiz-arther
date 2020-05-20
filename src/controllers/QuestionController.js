@@ -17,17 +17,17 @@ module.exports = {
 
       }
 
-      const record = await Question.count({
-        where: {
-          enunciated: enunciated,
-        }
-
-      });
-
-      if (record != 0) {
-        return res.status(400).json({ message: 'ja existe questão com esse enuciado' });
-
-      }
+      /*  const record = await Question.count({
+          where: {
+            enunciated: enunciated,
+          }
+  
+        });
+  
+        if (record != 0) {
+          return res.status(400).json({ message: 'ja existe questão com esse enuciado' });
+  
+        }*/
       const question = await Question.create({
         enunciated,
         alternativetrue,

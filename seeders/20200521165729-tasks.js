@@ -7,7 +7,7 @@ module.exports = {
       {
         id: 1,
         title: 'Atividade de Lógica',
-        description: 'Essa atividade é feita para testa sua lógica',
+        description: 'Essa atividade é feita para testar sua lógica',
         user_id: 1,
         created_at: new Date(),
         updated_at: new Date(),
@@ -15,7 +15,7 @@ module.exports = {
       {
         id: 2,
         title: 'Atividade de Informatica',
-        description: 'Essa atividade é feita para testa seu conhecimento sobre a informatica',
+        description: 'Essa atividade é feita para testar seu conhecimento sobre a informatica',
         user_id: 1,
         created_at: new Date(),
         updated_at: new Date(),
@@ -23,7 +23,7 @@ module.exports = {
       {
         id: 3,
         title: 'Atividade de Lógica parte 2',
-        description: 'Essa atividade é feita para testa sua lógica',
+        description: 'Essa atividade é feita para testar sua lógica',
         user_id: 1,
         created_at: new Date(),
         updated_at: new Date(),
